@@ -1,0 +1,38 @@
+{
+  "name": "Cabby",
+  "version": "1.0.0",
+  "description": "A place for all your travel solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js",
+    "seq": "npm run sequelize",
+    "npminstall": "curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash",
+    "npmrunversion": "npm install -g npm@latest",
+    "migrate": "npx sequelize-cli db:migrate"
+  },
+  "author": "Shalu Chandwani",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "coveralls": "^3.0.9",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/runtime": "^7.8.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.14.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1"
+  }
+}

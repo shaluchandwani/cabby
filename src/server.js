@@ -1,9 +1,8 @@
-import express from 'express';
 
-const app = express();
+import app from './app';
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // eslint-disable-next-line no-console
 app.listen(PORT, () => console.log(`Listening on port ${PORT}.......`));
